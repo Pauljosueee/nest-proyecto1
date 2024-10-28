@@ -5,20 +5,20 @@ const prisma = new PrismaClient();
 async function main() {
 
     const post1 = await prisma.listaexcusas.upsert({
-        where: { name: 'Estuve enfermo' },
+        where: { name: 'I was sick' },
         update: {},
         create: {
-            name: "Estuve enfermo",
+            name: "I was sick",
             description: "Content of Post 1",
             
     }  
 });
 
     const post2 = await prisma.listaexcusas.upsert({
-        where: { name: 'se comio mi perro' },
+        where: { name: 'ate my dog' },
         update: {},
         create: {
-            name: "se comio mi perro",
+            name: "ate my dog",
             description: "Content of Post 2",
         }
     });
@@ -32,4 +32,4 @@ main()
     })
     .finally(async () => {
         await prisma.$disconnect();
-    });
+});
