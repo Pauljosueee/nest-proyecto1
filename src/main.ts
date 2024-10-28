@@ -8,7 +8,7 @@ async function bootstrap() {
 
   const documentOptions = new DocumentBuilder()
  .setTitle('REST API')
- .setDescription('CRUD DE BIBLIOTECA DE CHISTES')
+ .setDescription('CRUD DE LISTA DE EXCUSAS')
  .setVersion('0.1')
  .build();
 
