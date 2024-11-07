@@ -16,7 +16,9 @@ export class ListaexcusasService {
 
 
   findAll() {
-    return `This action returns all listaexcusas`;
+    return this.prisma.listaexcusas.findMany({
+      
+    });
   }
 
   findOne(id: number) {
